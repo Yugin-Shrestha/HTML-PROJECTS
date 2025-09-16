@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <header>
+        <h1>REVIEW OF THE RESTURANT</h1>
+    </header>
+    <MAIN>
+        <form action="data.php" method="post">  
+        <input type="text" name="name" placeholder="Enter your name">
+        <br><br>
+        <input type="email" name="email" placeholder="Enter your email">
+        <br><br>
+        <input type="text" name="resturant" placeholder="Enter resturant name">
+        <br><br>
+        <label for="city">Select your city:</label>
+        <select name="city">
+            <option value="delhi">Kathmandu</option>
+            <option value="mumbai">Lalitpur</option>
+            <option value="bangalore">Bhaktapur</option>
+            <option value="kolkata">Pokhara</option>
+            <option value="chennai">Chitwan</option>
+        </select>
+        <br>
+            <p>How was your experience at the resturant?</p>
+        <br>
+            <input type="radio" name="rating" value="excellent" id="id1"><label for="id1">Excellent</label>
+            <br><br>
+            <input type="radio" name="rating" value="good" id="id2"><label for="id2">Good</label>
+            <br><br>
+            <input type="radio" name="rating" value="average" id="id3"><label for="id3">Average</label>
+            <br><br>
+            <input type="radio" name="rating" value="poor" id="id4"><label for="id4">Poor</label>
+        <br>
+            <p>What did you like the most?</p>
+        <br>
+            <input type="checkbox" name="like[]" value="food" id="id5"><label for="id5">Food</label><br><br>
+            <input type="checkbox" name="like[]" value="service" id="id6"><label for="id6">Service</label><br><br>
+            <input type="checkbox" name="like[]" value="ambience" id="id7"><label for="id7">Ambience</label><br><br>
+            <input type="checkbox" name="like[]" value="price" id="id8"><label for="id8">Price</label><br><br>
+            <br>
+        <textarea name="feedback" placeholder="please give your feedback here" cols="30" rows="10"></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+        </form>
+    </MAIN>
+</body>
+</html>
